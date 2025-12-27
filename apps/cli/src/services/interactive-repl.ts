@@ -363,7 +363,7 @@ export class InteractiveRepl {
       const streamResult = await readDataAgent(
         conversation.id,
         messages,
-        'azure/gpt-5-mini',
+        'local-llm/default',
         queryEngine,
         repositories,
       );
@@ -486,7 +486,7 @@ export class InteractiveRepl {
 
         this.agent = await FactoryAgent.create({
           conversationSlug: this.conversationId,
-          model: 'azure/gpt-5-mini', // Default model for CLI
+          model: 'local-llm/default', // Default model for CLI
           repositories,
         });
       }
