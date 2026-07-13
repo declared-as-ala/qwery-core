@@ -28,7 +28,7 @@
     "typescript": "catalog:"
   },
   "dependencies": {
-    "pino": "^10.1.0",
+    "pino": "^10.3.1",
     "sql-formatter": "^15.6.11"
   },
   "typesVersions": {
