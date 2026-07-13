@@ -21,7 +21,7 @@
   "dependencies": {
     "@duckdb/node-api": "1.4.2-r.1",
     "@hookform/resolvers": "^5.2.2",
-    "@marsidev/react-turnstile": "^1.3.1",
+    "@marsidev/react-turnstile": "^1.5.3",
     "@qwery/accounts": "workspace:*",
     "@qwery/agent-factory-sdk": "workspace:*",
     "@qwery/csrf": "workspace:*",
