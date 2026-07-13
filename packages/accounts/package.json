@@ -13,7 +13,7 @@
     "./account-dropdown": "./src/components/account-dropdown.tsx"
   },
   "dependencies": {
-    "nanoid": "^5.1.6",
+    "nanoid": "^5.1.16",
     "react-router": "catalog:"
   },
   "devDependencies": {
