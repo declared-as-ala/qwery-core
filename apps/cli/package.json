@@ -37,7 +37,7 @@
     "ai": "^5.0.93",
     "commander": "^13.1.0",
     "dotenv": "^16.4.7",
-    "nanoid": "^5.1.6",
+    "nanoid": "^5.1.16",
     "pg": "^8.13.1",
     "react": "catalog:",
     "react-dom": "catalog:",

@@ -13,7 +13,7 @@
     "./new-datasource": "./src/components/new-datasource.tsx"
   },
   "dependencies": {
-    "nanoid": "^5.1.6"
+    "nanoid": "^5.1.16"
   },
   "devDependencies": {
     "@hookform/resolvers": "^5.2.2",
