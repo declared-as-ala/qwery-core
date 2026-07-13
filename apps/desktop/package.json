@@ -15,12 +15,12 @@
     "compile": "cross-env NODE_ENV=production tsc -p tsconfig.json",
     "compile:watch": "cross-env NODE_ENV=development tsc -p tsconfig.json --watch --preserveWatchOutput",
     "prepare:renderer": "node ./scripts/prepare-renderer.mjs",
-    "build": "pnpm clean && pnpm i && pnpm --filter web build && pnpm compile && pnpm prepare:renderer",
-    "dev": "concurrently -c cyan,magenta -n compile,electron \"pnpm compile:watch\" \"pnpm start:electron\"",
-    "dev:standalone": "concurrently -c cyan,magenta,green -n compile,electron,renderer \"pnpm compile:watch\" \"pnpm start:electron\" \"pnpm --filter web dev\"",
-    "start:electron": "wait-on file:dist/main.js http-get://localhost:3000 --timeout 60000 && cross-env NODE_ENV=development nodemon --watch dist --ext js --exec \"electron dist/main.js\"",
+    "build": "node init && pnpm clean && pnpm i && pnpm --filter web build && pnpm compile && pnpm prepare:renderer",
+    "dev": "node init && concurrently -c cyan,magenta -n compile,electron \"pnpm compile:watch\" \"pnpm start:electron\"",
+    "dev:standalone": "node init && concurrently -c cyan,magenta,green -n compile,electron,renderer \"pnpm compile:watch\" \"pnpm start:electron\" \"pnpm --filter web dev\"",
+    "start:electron": "node init && wait-on file:dist/main.js http-get://localhost:3000 --timeout 60000 && cross-env NODE_ENV=development nodemon --watch dist --ext js --exec \"electron dist/main.js\"",
     "package": "pnpm build && electron-builder -c electron-builder.yml",
-    "start": "pnpm build && cross-env NODE_ENV=production electron dist/main.js"
+    "start": "node init && pnpm build && cross-env NODE_ENV=production electron dist/main.js"
   },
   "devDependencies": {
     "@qwery/eslint-config": "workspace:*",

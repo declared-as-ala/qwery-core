@@ -24,7 +24,7 @@
     "@uiw/react-codemirror": "^4.25.2",
     "codemirror": "^6.0.2",
     "motion": "^12.23.24",
-    "nanoid": "^5.1.6",
+    "nanoid": "^5.1.16",
     "react-markdown": "^10.1.0",
     "remark-gfm": "^4.0.1"
   },
