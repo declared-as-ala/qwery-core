@@ -14,7 +14,7 @@
   "scripts": {
     "lint": "echo \"no lint configured\"",
     "test": "vitest run --coverage --passWithNoTests",
-    "build": "tsc -p tsconfig.build.json"
+    "build": "node init && tsc -p tsconfig.build.json"
   },
   "contributes": {
     "datasources": [
