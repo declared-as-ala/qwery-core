@@ -22,7 +22,7 @@
     "@qwery/domain": "workspace:*",
     "@qwery/extensions-loader": "workspace:*",
     "@qwery/extensions-sdk": "workspace:*",
-    "nanoid": "^5.1.6",
+    "nanoid": "^5.1.16",
     "uuid": "catalog:"
   },
   "devDependencies": {
